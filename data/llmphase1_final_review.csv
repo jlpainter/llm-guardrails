@@ -1,0 +1,211 @@
+ReviewID,Case Master ID,Case Date,Reviewer_1,Reviewer_1_Time,Reviewer_2,Reviewer_2_Time,Secondary: Source is clear,Correct assessment?,Translation accuracy,Source has multiple meanings,Source is clear,Source contains contradictions
+1,1,09/01/2023,reviewer_26,467854,reviewer_16,43999,5. Completely easily understood and well written,Yes,Missing information,No,5. Completely easily understood and well written,No
+2,2,09/01/2023,reviewer_11,574764,reviewer_22,515891,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+3,3,09/01/2023,reviewer_11,1931230,reviewer_22,916745,4. Mostly clear and easy to read,Yes,Added information,No,3. Needs rereading to understand,No
+4,4,09/01/2023,reviewer_7,295922,reviewer_24,160707,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+5,5,09/01/2023,reviewer_26,242588,reviewer_10,222483,5. Completely easily understood and well written,No,Missing information,No,5. Completely easily understood and well written,No
+6,6,09/01/2023,reviewer_16,138285,reviewer_26,556339,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+7,7,09/01/2023,reviewer_26,1802580,reviewer_29,469639,4. Mostly clear and easy to read,Yes,Added information,No,3. Needs rereading to understand,No
+8,8,09/01/2023,reviewer_16,258927,reviewer_29,743302,4. Mostly clear and easy to read,No,Added information,No,5. Completely easily understood and well written,No
+9,9,09/01/2023,reviewer_24,192695,reviewer_11,628620,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+10,10,09/01/2023,reviewer_29,666689,reviewer_22,523858,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+11,11,09/01/2023,reviewer_24,147184,reviewer_11,128912,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+12,12,09/01/2023,reviewer_7,115077,reviewer_26,249725,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+13,13,09/01/2023,reviewer_19,1866112,reviewer_22,1161234,3. Needs rereading to understand,Yes,Added information,No,3. Needs rereading to understand,No
+14,14,09/01/2023,reviewer_24,765557,reviewer_10,201155,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+15,15,09/01/2023,reviewer_10,317491,reviewer_29,171331,5. Completely easily understood and well written,Yes,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+16,16,09/01/2023,reviewer_29,187230,reviewer_22,505013,5. Completely easily understood and well written,Yes,Missing information,No,5. Completely easily understood and well written,No
+17,17,09/01/2023,reviewer_14,1105051,reviewer_24,227439,5. Completely easily understood and well written,Yes,Both missing and added information,No,4. Mostly clear and easy to read,No
+18,18,09/01/2023,reviewer_14,1231661,reviewer_23,512153,5. Completely easily understood and well written,No,Added information,No,4. Mostly clear and easy to read,No
+19,19,09/01/2023,reviewer_24,384793,reviewer_14,1404118,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+20,20,09/01/2023,reviewer_10,527408,reviewer_11,925143,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+21,21,09/01/2023,reviewer_14,1147823,reviewer_7,207311,4. Mostly clear and easy to read,No,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+22,22,09/01/2023,reviewer_10,428306,reviewer_16,93300,5. Completely easily understood and well written,Yes,Both missing and added information,No,5. Completely easily understood and well written,No
+23,23,09/01/2023,reviewer_14,1098735,reviewer_29,467275,4. Mostly clear and easy to read,Yes,Both missing and added information,No,4. Mostly clear and easy to read,No
+24,24,09/01/2023,reviewer_29,631558,reviewer_7,297776,5. Completely easily understood and well written,No,Added information,No,4. Mostly clear and easy to read,No
+25,25,09/01/2023,reviewer_14,948215,reviewer_26,312194,4. Mostly clear and easy to read,Yes,Missing information,No,4. Mostly clear and easy to read,No
+26,26,09/01/2023,reviewer_24,386843,reviewer_16,80262,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+27,27,09/01/2023,reviewer_26,733440,reviewer_7,382310,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+28,28,09/01/2023,reviewer_26,357414,reviewer_10,197662,4. Mostly clear and easy to read,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+29,29,09/01/2023,reviewer_24,185731,reviewer_26,97515,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+30,30,09/01/2023,reviewer_11,642413,reviewer_26,286205,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,3. Needs rereading to understand,No
+31,31,09/01/2023,reviewer_16,51665,reviewer_19,443523,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+32,32,09/01/2023,reviewer_23,1272471,reviewer_26,510899,3. Needs rereading to understand,No,Both missing and added information,No,3. Needs rereading to understand,No
+33,33,09/01/2023,reviewer_14,2042526,reviewer_29,569863,4. Mostly clear and easy to read,Yes,Both missing and added information,No,4. Mostly clear and easy to read,No
+34,34,09/01/2023,reviewer_26,838646,reviewer_7,326428,4. Mostly clear and easy to read,No,Both missing and added information,No,3. Needs rereading to understand,No
+35,35,09/01/2023,reviewer_11,406838,reviewer_16,609386,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+36,36,09/01/2023,reviewer_24,523038,reviewer_11,307347,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+37,37,09/01/2023,reviewer_24,322903,reviewer_10,118702,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+38,38,09/01/2023,reviewer_26,280087,reviewer_10,138593,4. Mostly clear and easy to read,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+39,39,09/01/2023,reviewer_11,596761,reviewer_10,290079,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+40,40,09/01/2023,reviewer_23,1274788,reviewer_16,137042,4. Mostly clear and easy to read,No,Both missing and added information,No,2. Difficult to understand,No
+41,41,09/01/2023,reviewer_26,406317,reviewer_11,141586,4. Mostly clear and easy to read,Yes,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+42,42,09/01/2023,reviewer_19,920743,reviewer_24,193600,5. Completely easily understood and well written,Yes,Both missing and added information,No,5. Completely easily understood and well written,No
+43,43,09/01/2023,reviewer_23,601898,reviewer_19,228849,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+44,44,09/01/2023,reviewer_10,336885,reviewer_19,363242,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+45,45,09/01/2023,reviewer_11,143235,reviewer_22,468788,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+46,46,09/01/2023,reviewer_10,472208,reviewer_23,965199,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+47,47,09/01/2023,reviewer_26,685204,reviewer_24,77186,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+48,48,09/01/2023,reviewer_26,1445187,reviewer_16,104592,3. Needs rereading to understand,Yes,Added information,No,3. Needs rereading to understand,No
+49,49,09/01/2023,reviewer_16,76722,reviewer_10,176684,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+50,50,09/01/2023,reviewer_26,319899,reviewer_22,806607,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+51,51,09/01/2023,reviewer_16,202734,reviewer_26,692225,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+52,52,09/01/2023,reviewer_11,1369195,reviewer_16,74124,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+53,53,09/01/2023,reviewer_14,3295678,reviewer_16,220458,4. Mostly clear and easy to read,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+54,54,09/01/2023,reviewer_16,92224,reviewer_7,112079,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+55,55,09/01/2023,reviewer_19,646773,reviewer_22,481532,4. Mostly clear and easy to read,Yes,Both missing and added information,No,5. Completely easily understood and well written,No
+56,56,09/01/2023,reviewer_16,250580,reviewer_24,630014,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+57,57,09/01/2023,reviewer_11,534338,reviewer_24,117681,5. Completely easily understood and well written,Yes,Added information,No,4. Mostly clear and easy to read,No
+58,58,09/01/2023,reviewer_29,400478,reviewer_26,263163,5. Completely easily understood and well written,Yes,Added information,No,4. Mostly clear and easy to read,No
+59,59,09/01/2023,reviewer_7,774090,reviewer_22,502456,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+60,60,09/01/2023,reviewer_7,189179,reviewer_2,78892,5. Completely easily understood and well written,Yes,Missing information,No,4. Mostly clear and easy to read,No
+61,61,09/01/2023,reviewer_16,80390,reviewer_29,2378483,4. Mostly clear and easy to read,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+62,62,09/01/2023,reviewer_14,3302153,reviewer_19,453961,4. Mostly clear and easy to read,No,Missing information,No,4. Mostly clear and easy to read,No
+63,63,09/01/2023,reviewer_14,1444769,reviewer_29,156573,4. Mostly clear and easy to read,Yes,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+64,64,09/01/2023,reviewer_22,2052754,reviewer_16,103691,4. Mostly clear and easy to read,Yes,Both missing and added information,Yes,4. Mostly clear and easy to read,No
+65,65,09/01/2023,reviewer_23,564264,reviewer_16,201041,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+66,66,09/01/2023,reviewer_14,34333,reviewer_24,511038,3. Needs rereading to understand,No,Both missing and added information,No,2. Difficult to understand,No
+67,67,09/01/2023,reviewer_10,604484,reviewer_29,370223,4. Mostly clear and easy to read,Yes,Added information,No,2. Difficult to understand,No
+68,68,09/01/2023,reviewer_29,321043,reviewer_26,799523,4. Mostly clear and easy to read,No,Added information,No,5. Completely easily understood and well written,No
+69,69,09/01/2023,reviewer_7,813154,reviewer_14,181576,3. Needs rereading to understand,Yes,Added information,No,4. Mostly clear and easy to read,No
+70,70,09/01/2023,reviewer_24,267708,reviewer_22,418859,4. Mostly clear and easy to read,No,Added information,No,5. Completely easily understood and well written,No
+71,71,09/01/2023,reviewer_14,332514,reviewer_16,138486,3. Needs rereading to understand,No,Both missing and added information,No,3. Needs rereading to understand,No
+72,72,09/01/2023,reviewer_7,385554,reviewer_16,49761,5. Completely easily understood and well written,Yes,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+73,73,09/01/2023,reviewer_23,294737,reviewer_29,223639,5. Completely easily understood and well written,Yes,Missing information,No,5. Completely easily understood and well written,No
+74,74,09/01/2023,reviewer_23,800026,reviewer_29,459216,5. Completely easily understood and well written,Yes,Added information,No,4. Mostly clear and easy to read,No
+75,75,09/01/2023,reviewer_11,482980,reviewer_19,444964,4. Mostly clear and easy to read,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+76,76,09/01/2023,reviewer_10,1009782,reviewer_24,575295,5. Completely easily understood and well written,No,Added information,Yes,3. Needs rereading to understand,No
+77,77,09/01/2023,reviewer_19,1356903,reviewer_16,165707,5. Completely easily understood and well written,Yes,Missing information,No,4. Mostly clear and easy to read,No
+78,78,09/01/2023,reviewer_23,551250,reviewer_10,113727,4. Mostly clear and easy to read,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+79,79,09/01/2023,reviewer_10,96671,reviewer_16,27394,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+80,80,09/01/2023,reviewer_26,465209,reviewer_14,127051,4. Mostly clear and easy to read,No,Added information,No,5. Completely easily understood and well written,No
+81,81,09/01/2023,reviewer_14,25834,reviewer_26,572758,3. Needs rereading to understand,Yes,Missing information,No,3. Needs rereading to understand,No
+82,82,09/01/2023,reviewer_22,82239,reviewer_29,79776,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+83,83,09/01/2023,reviewer_11,459403,reviewer_23,573207,3. Needs rereading to understand,No,Nothing missing or added to translation,Yes,3. Needs rereading to understand,No
+84,84,09/01/2023,reviewer_14,761348,reviewer_26,360154,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+85,85,09/01/2023,reviewer_14,804071,reviewer_10,237758,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+86,86,09/01/2023,reviewer_26,774039,reviewer_16,109685,4. Mostly clear and easy to read,No,Added information,No,2. Difficult to understand,No
+87,87,09/01/2023,reviewer_16,66685,reviewer_19,235449,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+88,88,09/01/2023,reviewer_24,165659,reviewer_19,283773,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+89,89,09/01/2023,reviewer_14,41849,reviewer_26,951893,3. Needs rereading to understand,No,Missing information,No,3. Needs rereading to understand,No
+90,90,09/01/2023,reviewer_11,1104376,reviewer_14,47495,2. Difficult to understand,Yes,Added information,No,3. Needs rereading to understand,No
+91,91,09/01/2023,reviewer_23,1249460,reviewer_14,365224,4. Mostly clear and easy to read,Yes,Added information,No,2. Difficult to understand,No
+92,92,09/01/2023,reviewer_16,139840,reviewer_26,136293,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+93,93,09/01/2023,reviewer_2,157104,reviewer_14,482985,4. Mostly clear and easy to read,Yes,Missing information,No,5. Completely easily understood and well written,No
+94,94,09/01/2023,reviewer_16,42220,reviewer_14,37075,4. Mostly clear and easy to read,Yes,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+95,95,09/01/2023,reviewer_24,327874,reviewer_16,62068,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+96,96,09/01/2023,reviewer_11,1650935,reviewer_16,80593,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+97,97,09/01/2023,reviewer_29,885233,reviewer_7,212245,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+98,98,09/01/2023,reviewer_16,124808,reviewer_22,848654,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+99,99,09/01/2023,reviewer_23,596626,reviewer_26,563248,4. Mostly clear and easy to read,No,Added information,No,5. Completely easily understood and well written,No
+100,100,09/01/2023,reviewer_16,160169,reviewer_23,1436952,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+101,101,09/01/2023,reviewer_14,208517,reviewer_24,759492,4. Mostly clear and easy to read,Yes,Both missing and added information,No,4. Mostly clear and easy to read,No
+102,102,09/01/2023,reviewer_26,740352,reviewer_16,170994,5. Completely easily understood and well written,Yes,Missing information,No,5. Completely easily understood and well written,No
+103,103,09/01/2023,reviewer_16,198080,reviewer_24,673082,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+104,104,09/01/2023,reviewer_26,900148,reviewer_24,404876,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+105,105,09/01/2023,reviewer_16,215097,reviewer_24,743852,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+106,106,09/01/2023,reviewer_16,116335,reviewer_22,627660,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+107,107,09/01/2023,reviewer_24,1085287,reviewer_23,417344,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+108,108,09/01/2023,reviewer_7,723811,reviewer_14,203216,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+109,109,09/01/2023,reviewer_29,489430,reviewer_7,731817,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+110,110,09/01/2023,reviewer_26,847942,reviewer_24,950769,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+111,111,09/01/2023,reviewer_24,220218,reviewer_7,115198,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+112,112,09/01/2023,reviewer_7,171813,reviewer_19,111698,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+113,113,09/01/2023,reviewer_11,751342,reviewer_7,339732,3. Needs rereading to understand,Yes,Added information,No,4. Mostly clear and easy to read,No
+114,114,09/01/2023,reviewer_11,416831,reviewer_19,429544,4. Mostly clear and easy to read,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+115,115,09/01/2023,reviewer_26,371250,reviewer_11,496693,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+116,116,09/01/2023,reviewer_24,229188,reviewer_11,1071341,4. Mostly clear and easy to read,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+117,117,09/01/2023,reviewer_11,2564870,reviewer_14,28150,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+118,118,09/01/2023,reviewer_24,638719,reviewer_22,615729,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+119,119,09/01/2023,reviewer_23,401511,reviewer_11,297486,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+120,120,09/01/2023,reviewer_29,1934298,reviewer_24,540726,4. Mostly clear and easy to read,Yes,Both missing and added information,No,3. Needs rereading to understand,No
+121,121,09/01/2023,reviewer_19,1303494,reviewer_22,1162587,4. Mostly clear and easy to read,Yes,Added information,No,3. Needs rereading to understand,No
+122,122,09/01/2023,reviewer_16,192998,reviewer_14,453994,4. Mostly clear and easy to read,No,Added information,No,5. Completely easily understood and well written,No
+123,123,09/01/2023,reviewer_11,1586942,reviewer_22,27511,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+124,124,09/01/2023,reviewer_23,671874,reviewer_29,117315,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+125,125,09/01/2023,reviewer_29,411076,reviewer_10,315080,5. Completely easily understood and well written,No,Added information,No,4. Mostly clear and easy to read,No
+126,126,09/01/2023,reviewer_22,412128,reviewer_14,256846,4. Mostly clear and easy to read,No,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+127,127,09/01/2023,reviewer_16,188889,reviewer_24,643488,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+128,128,09/01/2023,reviewer_29,245170,reviewer_23,1119046,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+129,129,09/01/2023,reviewer_22,1300722,reviewer_7,792411,3. Needs rereading to understand,Yes,Added information,Yes,3. Needs rereading to understand,No
+130,130,09/01/2023,reviewer_7,281594,reviewer_24,273253,4. Mostly clear and easy to read,No,Added information,Yes,4. Mostly clear and easy to read,No
+131,131,09/01/2023,reviewer_29,891212,reviewer_23,314690,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+132,132,09/01/2023,reviewer_16,92989,reviewer_22,2243912,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+133,133,09/01/2023,reviewer_23,1495648,reviewer_24,34561,3. Needs rereading to understand,Yes,Both missing and added information,No,3. Needs rereading to understand,No
+134,134,09/01/2023,reviewer_16,116695,reviewer_7,322907,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+135,135,09/01/2023,reviewer_7,633363,reviewer_16,97098,3. Needs rereading to understand,Yes,Added information,No,4. Mostly clear and easy to read,No
+136,136,09/01/2023,reviewer_7,452393,reviewer_19,67944,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+137,137,09/01/2023,reviewer_2,596691,reviewer_24,64462,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+138,138,09/01/2023,reviewer_24,1290629,reviewer_26,299462,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+139,139,09/01/2023,reviewer_26,168411,reviewer_16,119416,4. Mostly clear and easy to read,Yes,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+140,140,09/01/2023,reviewer_26,120272,reviewer_16,53355,5. Completely easily understood and well written,Yes,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+141,141,09/01/2023,reviewer_22,1991556,reviewer_26,369628,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+142,142,09/01/2023,reviewer_11,1197193,reviewer_14,22153,3. Needs rereading to understand,Yes,Added information,No,5. Completely easily understood and well written,No
+143,143,09/01/2023,reviewer_11,391672,reviewer_10,61326,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+144,144,09/01/2023,reviewer_26,490436,reviewer_24,178112,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+145,145,09/01/2023,reviewer_26,1128555,reviewer_7,21067,4. Mostly clear and easy to read,No,Added information,No,3. Needs rereading to understand,No
+146,146,09/01/2023,reviewer_16,236119,reviewer_7,909119,4. Mostly clear and easy to read,No,Added information,No,3. Needs rereading to understand,No
+147,147,09/01/2023,reviewer_7,480940,reviewer_23,453010,4. Mostly clear and easy to read,Yes,Nothing missing or added to translation,No,4. Mostly clear and easy to read,No
+148,148,09/01/2023,reviewer_10,369784,reviewer_26,418094,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+149,149,09/01/2023,reviewer_29,24905,reviewer_7,422217,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+150,150,09/01/2023,reviewer_23,1111708,reviewer_16,44972,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+151,151,09/01/2023,reviewer_23,679853,reviewer_22,3255498,4. Mostly clear and easy to read,Yes,Both missing and added information,No,4. Mostly clear and easy to read,No
+152,152,09/01/2023,reviewer_14,933852,reviewer_22,37959,4. Mostly clear and easy to read,Yes,Added information,Yes,4. Mostly clear and easy to read,No
+153,153,09/01/2023,reviewer_10,440817,reviewer_7,461753,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+154,154,09/01/2023,reviewer_11,2839116,reviewer_7,996877,4. Mostly clear and easy to read,No,Added information,No,3. Needs rereading to understand,No
+155,155,09/01/2023,reviewer_29,410274,reviewer_22,692566,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+156,156,09/01/2023,reviewer_19,1207583,reviewer_24,308237,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+157,157,09/01/2023,reviewer_23,1694665,reviewer_7,2760095,5. Completely easily understood and well written,No,Added information,No,4. Mostly clear and easy to read,No
+158,158,09/01/2023,reviewer_22,1817233,reviewer_14,375226,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+159,159,09/01/2023,reviewer_7,1341670,reviewer_23,400738,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+160,160,09/01/2023,reviewer_10,736408,reviewer_16,42701,3. Needs rereading to understand,No,Added information,No,4. Mostly clear and easy to read,No
+161,161,09/01/2023,reviewer_26,1461753,reviewer_29,800131,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+162,162,09/01/2023,reviewer_29,143902,reviewer_10,46499,5. Completely easily understood and well written,Yes,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+163,163,09/01/2023,reviewer_14,557199,reviewer_26,158709,4. Mostly clear and easy to read,Yes,Both missing and added information,No,4. Mostly clear and easy to read,No
+164,164,09/01/2023,reviewer_2,279346,reviewer_14,965483,4. Mostly clear and easy to read,Yes,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+165,165,09/01/2023,reviewer_11,1886461,reviewer_7,293412,4. Mostly clear and easy to read,Yes,Added information,No,3. Needs rereading to understand,No
+166,166,09/01/2023,reviewer_10,139232,reviewer_19,160190,5. Completely easily understood and well written,No,Added information,No,5. Completely easily understood and well written,No
+167,167,09/01/2023,reviewer_10,363071,reviewer_14,1317645,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+168,168,09/01/2023,reviewer_16,222353,reviewer_26,541895,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+169,169,09/01/2023,reviewer_16,406664,reviewer_10,290103,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+170,170,09/01/2023,reviewer_10,164818,reviewer_7,298365,4. Mostly clear and easy to read,Yes,Both missing and added information,No,5. Completely easily understood and well written,No
+171,171,09/01/2023,reviewer_29,546065,reviewer_14,918645,4. Mostly clear and easy to read,Yes,Added information,Yes,4. Mostly clear and easy to read,No
+172,172,09/01/2023,reviewer_14,306850,reviewer_16,195948,4. Mostly clear and easy to read,Yes,Both missing and added information,No,4. Mostly clear and easy to read,No
+173,173,09/01/2023,reviewer_24,675937,reviewer_22,556746,4. Mostly clear and easy to read,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+174,174,09/01/2023,reviewer_23,1005509,reviewer_19,59573,4. Mostly clear and easy to read,No,Both missing and added information,No,3. Needs rereading to understand,No
+175,175,09/01/2023,reviewer_26,2678582,reviewer_29,950117,2. Difficult to understand,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+176,176,09/01/2023,reviewer_24,403261,reviewer_23,535057,4. Mostly clear and easy to read,No,Added information,No,5. Completely easily understood and well written,No
+177,177,09/01/2023,reviewer_10,320527,reviewer_24,715023,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+178,178,09/01/2023,reviewer_23,675540,reviewer_16,55752,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+179,179,09/01/2023,reviewer_26,1066649,reviewer_11,503759,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+180,180,09/01/2023,reviewer_11,1702349,reviewer_29,55012,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+181,181,09/01/2023,reviewer_29,884795,reviewer_11,880744,3. Needs rereading to understand,Yes,Added information,No,3. Needs rereading to understand,No
+182,182,09/01/2023,reviewer_2,1060082,reviewer_19,838545,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+183,183,09/01/2023,reviewer_2,1529588,reviewer_16,173231,5. Completely easily understood and well written,No,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+184,184,09/01/2023,reviewer_11,287521,reviewer_22,110407,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+185,185,09/01/2023,reviewer_29,16726,reviewer_26,276799,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+186,186,09/01/2023,reviewer_11,1037520,reviewer_22,1952520,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+187,187,09/01/2023,reviewer_29,483838,reviewer_11,1435709,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+188,188,09/01/2023,reviewer_24,1624672,reviewer_23,25878,3. Needs rereading to understand,No,Added information,No,3. Needs rereading to understand,No
+189,189,09/01/2023,reviewer_19,1091622,reviewer_23,1371047,4. Mostly clear and easy to read,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+190,190,09/01/2023,reviewer_22,3328085,reviewer_23,786430,4. Mostly clear and easy to read,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+191,191,09/01/2023,reviewer_7,390088,reviewer_29,126830,5. Completely easily understood and well written,Yes,Added information,No,5. Completely easily understood and well written,No
+192,192,09/01/2023,reviewer_11,351122,reviewer_24,296310,5. Completely easily understood and well written,Yes,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+193,193,09/01/2023,reviewer_7,187496,reviewer_16,72905,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+194,194,09/01/2023,reviewer_29,953774,reviewer_11,368204,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+195,195,09/01/2023,reviewer_2,1718327,reviewer_7,565747,4. Mostly clear and easy to read,No,Nothing missing or added to translation,No,4. Mostly clear and easy to read,Yes
+196,196,09/01/2023,reviewer_26,830899,reviewer_16,33575,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+197,197,09/01/2023,reviewer_16,129293,reviewer_29,233128,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+198,198,09/01/2023,reviewer_7,338285,reviewer_16,59784,5. Completely easily understood and well written,Yes,Added information,No,4. Mostly clear and easy to read,No
+199,199,09/01/2023,reviewer_14,298932,reviewer_16,446570,3. Needs rereading to understand,No,Added information,No,4. Mostly clear and easy to read,No
+200,200,09/01/2023,reviewer_10,575631,reviewer_7,136859,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+201,201,09/01/2023,reviewer_29,1486548,reviewer_7,513311,4. Mostly clear and easy to read,Yes,Added information,No,3. Needs rereading to understand,No
+202,202,09/01/2023,reviewer_7,2867835,reviewer_26,216606,4. Mostly clear and easy to read,Yes,Added information,No,5. Completely easily understood and well written,No
+203,203,09/01/2023,reviewer_29,1288048,reviewer_26,796733,3. Needs rereading to understand,No,Both missing and added information,No,4. Mostly clear and easy to read,No
+204,204,09/01/2023,reviewer_19,669975,reviewer_7,616579,4. Mostly clear and easy to read,No,Added information,No,4. Mostly clear and easy to read,No
+205,205,09/01/2023,reviewer_7,125413,reviewer_14,27681,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+206,206,09/01/2023,reviewer_11,972567,reviewer_26,679110,5. Completely easily understood and well written,No,Added information,No,4. Mostly clear and easy to read,No
+207,207,09/01/2023,reviewer_24,353081,reviewer_14,872943,4. Mostly clear and easy to read,Yes,Added information,No,4. Mostly clear and easy to read,No
+208,208,09/01/2023,reviewer_26,360782,reviewer_14,1622301,4. Mostly clear and easy to read,Yes,Nothing missing or added to translation,No,5. Completely easily understood and well written,No
+209,209,09/01/2023,reviewer_11,212827,reviewer_10,77442,5. Completely easily understood and well written,Yes,Added information,No,4. Mostly clear and easy to read,No
+210,210,09/01/2023,reviewer_16,161439,reviewer_7,768809,3. Needs rereading to understand,No,Added information,No,3. Needs rereading to understand,No
