@@ -1,5 +1,10 @@
 # llm-guardrails
-Data from our LLM Guardrails experiment
+Data from the LLM Guardrails experiment used to support the article below:
+
+***The Need for Guardrails with Large Language Models in Medical Safety-Critical Settings: An Artificial Intelligence Application in the Pharmacovigilance Ecosystem***
+
+https://arxiv.org/abs/2407.18322
+
 
 # Data Evaluation for Publication Support
 
