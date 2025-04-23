@@ -1,0 +1,314 @@
+LLM Phase 2 Review Data Analysis
+================
+Jeffery Painter
+
+``` r
+#
+# Read the LLM Phase 2 review data exported from the review tool
+#
+
+# All cases have been reviewed twice
+input_file = "../data/llmphase2_final_review.csv"
+
+llm_data = read.csv(input_file)
+
+#
+# Remap column names for easier identification
+#
+
+
+df_columns <- c( "db_key", "case_id", "qc_case", "adj_case", "num_diff", 
+                        "date", "reviewer_1", "reviewer_1_time", "eng_clear", 
+                        "llm_clear", "src_contradiction", "llm_contradiction", "exemplary_case", 
+                        "llm_completeness", "llm_correctness", 
+                        "llm_non_safety_extraneous", "llm_safety_related_extraneous",
+                        "wrong_drug", "wrong_dosage", "wrong_date",
+                        "wrong_outcome",  "rechallenge_dechallenge", 
+                        "tto_issue",  "phrase",  "other_error",
+                        "clinically_accurate" )
+
+colnames(llm_data) <- df_columns
+
+#
+# Bar chart of overall reviewer activity
+#
+df <-  data.frame(table(llm_data$reviewer_1))
+colnames(df) <- c ('user', 'frequency')
+ggplot(data=df, aes(x=user, y=frequency)) + geom_bar(stat="identity")
+```
+
+![](llmphase2_analysis_files/figure-gfm/full-analysis-1.png)<!-- -->
+
+``` r
+##
+## Count how many times was each case reviewed and append to our primary dataframe
+##
+case_review_count <- data.frame( table(llm_data$case_id) )
+colnames(case_review_count) <- c( "case_id", "count")
+llm_data <- join(llm_data, case_review_count, by="case_id", type="left")
+
+################################################################################
+##
+##                 QC: check for any missing required fields
+##
+##     If there are any reported errors in this step, we should go back and
+##              get the issue corrected by the case review team.
+##
+################################################################################
+required_columns <- c( "db_key", "case_id", "qc_case", "adj_case",
+                       "reviewer_1", "reviewer_1_time",  "eng_clear", "llm_clear", "src_contradiction", "llm_contradiction",
+                       "exemplary_case", "llm_completeness", "llm_correctness", "llm_non_safety_extraneous", "llm_safety_related_extraneous",
+                       "wrong_drug",  "wrong_dosage",  "wrong_date", "wrong_outcome", "rechallenge_dechallenge",
+                       "tto_issue",  "phrase",  "other_error", "clinically_accurate")
+
+# If the user did not select on a drop down, this is the
+# option value that may come through
+missing_option = "Please Select"
+
+missing_data_cases = data.frame()
+for ( rcol in required_columns )
+{
+  #print(paste("Testing column: ", rcol))
+  test_col_df = data.frame(llm_data[ c("case_id", rcol) ] )
+  missing_rows = test_col_df %>% filter ( test_col_df[[rcol]] %in% c( missing_option, "", NA ) )
+
+  if ( nrow(missing_rows) > 0  ) {
+    print( paste("There are cases with missing data for column: ", rcol, " Total affected: ", nrow(missing_rows)))
+  }
+
+  # Track cases with missing data
+  missing_cases = data.frame(unique(missing_rows["case_id"]))
+  if( nrow(missing_data_cases) == 0 ) {
+    missing_data_cases = missing_cases
+    colnames(missing_data_cases) <- c("case_id")
+  } else {
+    missing_data_cases <- rbind(missing_data_cases, missing_cases)
+    colnames(missing_data_cases) <- c("case_id")
+  }
+}
+
+# Get unique cases and print results
+missing_data_cases <- unique(missing_data_cases)
+print(paste("Total number of cases with missing data: ", nrow(missing_data_cases)))
+```
+
+    ## [1] "Total number of cases with missing data:  0"
+
+``` r
+################################################################################
+##                          Select cases to analyze
+################################################################################
+
+## Step 1:
+## CRITICAL Pre-check
+## If an entry does not have a case_id, it is invalid
+##
+missing_case_id = llm_data %>% filter ( case_id %in% c( NA, "") )
+if (nrow(missing_case_id) > 0 )
+{
+  print(paste("Critical error detected, missing master case_id field for entries: ", nrow(missing_case_id)))
+}
+
+# Remove the rows missing case id
+llm_data <- llm_data %>%  filter(! db_key %in% missing_case_id$db_key )
+
+################################################################################
+## Step 2: Remove missing data cases from the QC check above
+################################################################################
+llm_data <- llm_data %>%  filter(! case_id %in% missing_data_cases$case_id )
+
+################################################################################
+##
+## Step 3: Exclude cases that have not been reviewed twice
+##
+##         For LLM-Phase2 every case should receive at exactly 2 reviews.
+##         3 reviews will appear for cases that received 3rd party QC or
+##         adjudication due to conflicting reviews
+##
+################################################################################
+single_review_cases = llm_data %>% filter( llm_data$count < 2 )
+if ( nrow(single_review_cases) > 0 ) {
+  print("There were cases that have not been through at least two reviews!")
+} else {
+  print("All cases have been reviewed at least twice")
+}
+```
+
+    ## [1] "All cases have been reviewed at least twice"
+
+``` r
+# This step removes cases that only had a single review
+reviewed_cases <- llm_data %>%  filter(! db_key %in% single_review_cases$db_key )
+
+################################################################################
+## Step 4:
+## Flag cases that had a review time less than 10 seconds
+################################################################################
+# Our file with errors will have at least 1 of these with zero review time
+# Review time is captured in miliseconds
+time_limit = 15 * 1000
+
+exclude_cases <- llm_data %>% filter ( reviewer_1_time <= time_limit ) 
+if ( nrow(exclude_cases) > 0 )
+{
+  print(paste("Cases excluded due to very short review time: ", nrow(exclude_cases)))
+}
+
+reviewed_cases <- reviewed_cases %>%  filter(! db_key %in% exclude_cases$db_key )
+
+################################################################################
+## Step 5:
+## Filter cases that have been QC'd or adjudicated by a 3rd party reviewer
+################################################################################
+exclude_cases <- llm_data %>% filter ( count > 2 ) %>%
+  filter ( adj_case == FALSE ) %>% filter ( qc_case == FALSE )
+
+reviewed_cases <- reviewed_cases %>%  filter(! db_key %in% exclude_cases$db_key )
+
+adjudicate_count <- nrow(reviewed_cases %>% filter( adj_case == TRUE ))
+print(paste("Total adjudicated cases in the final review: ", adjudicate_count))
+```
+
+    ## [1] "Total adjudicated cases in the final review:  209"
+
+``` r
+qc_count <- nrow(reviewed_cases %>% filter( qc_case == TRUE ))
+print(paste("Total QC'd cases in the final review: ", qc_count))
+```
+
+    ## [1] "Total QC'd cases in the final review:  1"
+
+``` r
+################################################################################
+## Additional QC Steps
+################################################################################
+
+
+# Non-adj or Non-QC cases should be checked for consistency
+non_qc_adj_cases <- reviewed_cases %>%  filter(adj_case == FALSE)
+non_qc_adj_cases <- non_qc_adj_cases %>%  filter(qc_case == FALSE)
+non_qc_adj_cases <- non_qc_adj_cases %>% filter(count == 2)
+
+# Add test to exclude cases that have not yet been adjudicated from our analysis!
+exclude_non_adjudicated_cases = list()
+
+# Simple test: These are the yes/no questions which should have exact matches
+yes_no_columns <- c(  "wrong_drug", "wrong_dosage",  "wrong_date",
+                 "wrong_outcome",  "rechallenge_dechallenge", "tto_issue", "phrase", "other_error",  "clinically_accurate" )
+
+test_yes_no_cols <- subset( non_qc_adj_cases, select = c("db_key", "case_id", yes_no_columns ) )
+
+unique_cases <- unique(non_qc_adj_cases$case_id)
+for ( test_id in unique_cases )
+{
+  test_df <- reviewed_cases %>% filter( reviewed_cases$case_id %in% c(test_id) )
+  # Exactly two cases found, they should match on each of these since we dropped those that were QC'd and adjudicated
+  if (nrow(test_df) == 2 )
+  {
+    for ( yes_no_col in yes_no_columns  )
+    {
+      myvalue <- table(test_df[yes_no_col])[1]
+      if ( myvalue != 2 )
+      {
+        #print(paste( "Error with case_id: ", test_id, " Mismatch on Yes/No Question: ", yes_no_col ))
+        exclude_non_adjudicated_cases <- append(exclude_non_adjudicated_cases, test_id)
+      }
+    }
+  }
+}
+
+# Get the distinct set of cases to block from current data analysis
+exclude_non_adjudicated_cases <- unique(exclude_non_adjudicated_cases)
+
+# Remove these cases that have not yet been adjudicated
+reviewed_cases <- reviewed_cases %>%  filter(! case_id  %in% exclude_non_adjudicated_cases )
+
+################################################################################
+##                           Data Analysis
+################################################################################
+
+
+# Simulated data was pulled at random, so these may appear 50/50 for most
+graphs <- list()
+index = 1
+# Plot counts of the yes/no questions
+for ( colname in yes_no_columns )
+{
+  graph_df <- data.frame(table(reviewed_cases[[colname]] ))
+  colnames(graph_df) <- c( colname, "count" )
+  gg <- ggplot(graph_df,
+               aes(x = .data[[colname]],
+                   y = count,
+                   fill  = .data[[colname]],
+                   group = .data[[colname]] )) +
+    geom_col() +
+    labs(fill = colname)
+  graphs[[index]] = gg
+  index = index + 1
+}
+
+do.call(grid.arrange,graphs)
+```
+
+![](llmphase2_analysis_files/figure-gfm/full-analysis-2.png)<!-- -->
+
+``` r
+################################################################################
+##  Questions with ranking
+################################################################################
+
+ranking_questions <- c("eng_clear", "llm_clear", "llm_completeness", "llm_correctness", "llm_non_safety_extraneous", "llm_safety_related_extraneous"  )
+graphs <- list()
+
+# Plot counts of the yes/no questions
+index = 1
+for ( colname in ranking_questions )
+{
+
+  graph_df = data.frame()
+  # First extract all the responses
+  col_df <- data.frame(reviewed_cases[ c("case_id", colname) ] )
+
+  # If the reviewers agreed, we only need to keep one row for that case
+  subset_df = col_df[ !duplicated(col_df), ]
+
+  # Where did they disagree?
+  case_review_count <- data.frame( table(subset_df$case_id) )
+  colnames(case_review_count) <- c( "case_id", "count")
+  subset_df <- join(subset_df, case_review_count, by="case_id", type="left")
+
+  graph_df = subset_df %>% filter( subset_df$count == 1 )
+  unmatched_df = subset_df %>% filter( subset_df$count > 1 )
+  unique_case_ids = unique(unmatched_df$case_id)
+  for ( case_id in unique_case_ids ) {
+
+    # Get all of the responses for this case
+    case_responses = unmatched_df %>% filter( unmatched_df$case_id %in% c(case_id))
+
+    # Sort such that the highest response is the last one
+    case_responses <- case_responses[order(case_responses[[colname]] , decreasing=FALSE, na.last=FALSE),]
+
+    # Get the higher response
+    higher_response <- tail(case_responses, n=1)
+    graph_df <- rbind(graph_df, higher_response)
+  }
+
+  # Now count number of responses for each rank and plot
+  graph_df <- data.frame(table(graph_df[[colname]] ))
+  colnames(graph_df) <- c( colname, "count" )
+  gg <- ggplot(graph_df,
+               aes(x = .data[[colname]],
+                   y = count,
+                   fill  = .data[[colname]],
+                   group = .data[[colname]] )) +
+    geom_col() +
+    labs(fill = colname) +
+    scale_x_discrete(label=function(x) substring(x, 1, 1))
+  graphs[[index]] <-gg
+  index = index + 1
+}
+
+do.call(grid.arrange,graphs)
+```
+
+![](llmphase2_analysis_files/figure-gfm/full-analysis-3.png)<!-- -->
